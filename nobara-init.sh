@@ -5,7 +5,7 @@ sudo dnf upgrade --refresh --best --allowerasing -y
 sudo dnf autoremove -y
 sudo dnf clean all -y
 sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
-sudo dnf install -y dnf-automatic firefox gcc htop inxi nano neofetch notepadqq python3 unzip wget wine zip zsh
+sudo dnf install -y dnf-automatic firefox gcc htop inxi nano neofetch notepadqq python3 telegram unzip wget wine zip zsh
 
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo -y
 flatpak update -y
