@@ -42,11 +42,14 @@ rm jetbrains-toolbox-2.2.2.20062.tar.gz
 wget https://download.jetbrains.com/fonts/JetBrainsMono-2.304.zip
 unzip JetBrainsMono-2.304.zip
 sudo mv fonts /usr/share/jetbrains-fonts
-rm -rf fonts/ JetBrainsMono-2.304.zip
+rm -rf fonts/ JetBrainsMono-2.304.zip *.txt
 
 # Configuring zsh & fonts
 grep tecmint /etc/passwd
 sudo chsh -s /bin/zsh $USER
 
 source ~/.bashrc
+
+echo "If external sound output doesn't work properly, run alsamixer and enable all muted audio sources (press M)"
+
 /bin/zsh
