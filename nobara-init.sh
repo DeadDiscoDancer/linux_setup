@@ -50,6 +50,7 @@ sudo chsh -s /bin/zsh $USER
 
 source ~/.bashrc
 
-echo "If external sound output doesn't work properly, run alsamixer and enable all muted audio sources (press M)"
+echo "If external sound output doesn't work properly, run alsamixer and enable all muted audio sources (press M). If this doesn't help, there might be an issue with muting external sound while headphones are plugged.
+Open alsamixer and set Auto-Mute = Disabled."
 
 /bin/zsh
